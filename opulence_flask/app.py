@@ -24,7 +24,7 @@ class Menuitems(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index2.html')
 
 @app.route('/about')
 def about():
@@ -42,5 +42,9 @@ def contact():
 def menu():
     return render_template('menu.html')
 
+@app.route('/reservation')
+def reservation():
+    return render_template('resevation.html')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 
